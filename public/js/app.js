@@ -12,12 +12,12 @@
     "$locationProvider",
     Router
   ])
-  .factory("moodFactory", [
+  .factory("MoodFactory", [
     "$resource",
-    Moods
+    MoodFactory
   ])
   .controller("moodIndexController", [
-    "Moods",
+    "MoodFactory",
     moodIndexController
   ])
 
@@ -36,18 +36,16 @@
     })
   }
 
-  function Moods($resource){
+  function MoodFactory($resource){
     var Mood = $resource("/api/moods", {}, {
       update: {method: "PUT"}
     });
     Mood.all = Mood.query();
-    console.log(Mood)
     return Mood;
   }
 
   function moodIndexController(mood){
     var vm = this;
-    vm.mood = mood.all;
-    console.log(vm.mood)
+    vm.moods = mood.all;
   }
 })();
