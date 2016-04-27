@@ -1,4 +1,128 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.splash-enter {
+  background: url(../images/records_background.jpg);
+  background-size: cover;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center; }
+  .splash-enter img {
+    padding: 0; }
+  .splash-enter h1 {
+    color: white;
+    margin: 0;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 50px;
+    padding: 10px; }
+  .splash-enter h2 {
+    margin: 0;
+    color: white;
+    font-family: "Merriweather", serif;
+    font-size: 30px;
+    padding: 0; }
+  .splash-enter .enter-site {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    padding: 30px; }
+    .splash-enter .enter-site a {
+      text-decoration: none;
+      padding: 10px;
+      display: inline-block;
+      position: relative;
+      box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae, 6px 5px #3a587f, 5px 6px #4171ae;
+      background-color: #84a6d1; }
+    .splash-enter .enter-site a:active, .splash-enter .enter-site a:visited {
+      color: white;
+      transform: translate(4px, 4px);
+      box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
+    .splash-enter .enter-site a:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; }
+
+.container {
+  background: url(../images/records_background.jpg);
+  background-size: cover;
+  background-position: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+.logo {
+  position: absolute;
+  padding: 10px; }
+  .logo img {
+    width: 75px; }
+
+.playlist-generator {
+  background-color: rgba(65, 113, 174, 0.5);
+  width: 60%;
+  margin: 0 auto;
+  padding: 60px;
+  border-radius: 5px; }
+  .playlist-generator h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "Fjalla One", sans-serif; }
+  .playlist-generator h2 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "Merriweather", serif; }
+  .playlist-generator .divider {
+    height: 1px;
+    background-color: white;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .playlist-generator .moods {
+    display: inline-block;
+    padding-top: 10px; }
+    .playlist-generator .moods a {
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase; }
+    .playlist-generator .moods a:link, .playlist-generator .moods a:visited, .playlist-generator .moods a:hover {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      background-color: #4171ae; }
+    .playlist-generator .moods a:hover {
+      background-color: rgba(65, 113, 174, 0.3);
+      transition: 1s; }
+
+.playlist-show {
+  background: url(../images/records_background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh; }
+  .playlist-show .playlist-inner {
+    background-color: rgba(65, 113, 174, 0.3);
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-family: "Open Sans", sans-serif; }
+  .playlist-show h1 {
+    font-family: "Merriweather", serif;
+    color: white;
+    padding: 20px;
+    margin: 0; }
+  .playlist-show .track {
+    padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */

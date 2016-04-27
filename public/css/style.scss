@@ -1,3 +1,183 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+$header-font: 'Fjalla One', sans-serif;
+$subheader-font: 'Merriweather', serif;
+$body-text: 'Open Sans', sans-serif;
+$accent-color: #4171ae;
+$dark-shadow: #3a587f;
+
+.splash-enter {
+  background: url(../images/records_background.jpg);
+  background-size: cover;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+
+  img {
+    padding: 0;
+  }
+
+  h1 {
+    color: white;
+    margin: 0;
+    font-family: $header-font;
+    font-size: 50px;
+    padding: 10px;
+  }
+
+  h2 {
+    margin: 0;
+    color: white;
+    font-family: $subheader-font;
+    font-size: 30px;
+    padding: 0;
+  }
+
+  .enter-site {
+    font-family: $body-text;
+    text-transform: uppercase;
+    padding: 30px;
+
+    a {
+      text-decoration: none;
+      padding: 10px;
+      display: inline-block;
+      position: relative;
+      box-shadow: 1px 0px $dark-shadow, 0px 1px $accent-color,
+                  2px 1px $dark-shadow, 1px 2px $accent-color,
+                  3px 2px $dark-shadow, 2px 3px $accent-color,
+                  4px 3px $dark-shadow, 3px 4px $accent-color,
+                  5px 4px $dark-shadow, 4px 5px $accent-color,
+                  6px 5px $dark-shadow, 5px 6px $accent-color;
+      background-color: lighten($accent-color, 20%);;
+    }
+
+    a:active, a:visited {
+      color: white;
+     	transform: translate(4px, 4px);
+      box-shadow: 1px 0px $dark-shadow, 0px 1px $accent-color,
+                  2px 1px $dark-shadow, 1px 2px $accent-color;
+    }
+
+    a:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 1px 0px $dark-shadow, 0px 1px $accent-color,
+                  2px 1px $dark-shadow, 1px 2px $accent-color,
+                  3px 2px $dark-shadow, 2px 3px $accent-color,
+                  4px 3px $dark-shadow, 3px 4px $accent-color;
+    }
+  }
+}
+
+.container {
+  background: url(../images/records_background.jpg);
+  background-size: cover;
+  background-position: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  padding: 10px;
+
+  img {
+    width: 75px;
+  }
+}
+
+.playlist-generator {
+  background-color: transparentize($accent-color, .5);
+  width: 60%;
+  margin: 0 auto;
+  padding: 60px;
+  border-radius: 5px;
+
+  h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: $header-font;
+  }
+
+  h2 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: $subheader-font;
+  }
+
+  .divider {
+    height: 1px;
+    background-color: white;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .moods {
+    display: inline-block;
+    padding-top: 10px;
+
+    a {
+      font-family: $body-text;
+      text-transform: uppercase;
+    }
+
+    a:link, a:visited, a:hover {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      background-color: $accent-color;
+    }
+
+    a:hover {
+      background-color: transparentize($accent-color, .7);
+      transition: 1s;
+    }
+  }
+}
+
+.playlist-show {
+  background: url(../images/records_background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  .playlist-inner {
+    background-color: transparentize($accent-color, .7);
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-family: $body-text;
+  }
+
+  h1 {
+    font-family: $subheader-font;
+    color: white;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .track {
+    padding: 10px;
+  }
 }

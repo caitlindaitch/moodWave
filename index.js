@@ -19,8 +19,8 @@ app.use("/assets", express.static("public"));
 app.get("/api/moods", function(req, res){
   Moods.find().then(function(moods){
     res.json(moods);
-  })
-})
+  });
+});
 
 app.get("/*", function(req, res){
   res.render("app-welcome");

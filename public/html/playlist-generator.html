@@ -1,3 +1,11 @@
-<div data-ng-repeat="mood in moodIndexVM.moods">
-  <a href="playlist/{{mood.name}}">{{ mood.name }}</a>
+<div class="container">
+  <div class="playlist-generator">
+    <h2>So, how are you feeling?</h2>
+
+    <div class="divider"></div>
+
+    <div data-ng-repeat="mood in moodIndexVM.moods" class="moods">
+      <a href="playlist/{{mood.name}}">{{ mood.name }}</a>
+    </div>
+  </div>
 </div>

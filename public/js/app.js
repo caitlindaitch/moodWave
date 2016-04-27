@@ -89,15 +89,13 @@
       $.getJSON( Music, function( data ) {
         var tracks = data.similartracks.track;
 
-        console.log(tracks)
-
         for (var i=3; i<10; i++){
           vm.songs.push(tracks[i].name);
           vm.artists.push(tracks[i].artist.name);
         }
       }).then(function(){
         for (var i=0; i<vm.songs.length; i++){
-          $("body").append("<div class='track'><h3>" + vm.songs[i] + "</h3><div class='artist'>" + vm.artists[i] + "</div></div>")
+          $(".songs").append("<div class='track'><div class='song'>" + vm.songs[i] + "</div><div class='artist'>" + vm.artists[i] + "</div></div>")
         }
       });
     };
