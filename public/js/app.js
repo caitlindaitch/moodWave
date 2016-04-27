@@ -81,20 +81,24 @@
     });
 
     function apiCall(artist, song){
-      var Music = "http://ws.audioscrobbler.com/2.0/?method=track.getsimilar&artist=" + artist + "&track=" + song + "&APIKEY"
+      var Music = "http://ws.audioscrobbler.com/2.0/?method=track.getsimilar&artist=" + artist + "&track=" + song + "&api_key=182f7264f544c752fc6f20fdd6134d54&format=json"
 
-      vm.names = [];
+      vm.songs = [];
+      vm.artists = [];
 
       $.getJSON( Music, function( data ) {
         var tracks = data.similartracks.track;
 
+        console.log(tracks)
+
         for (var i=3; i<10; i++){
-          vm.names.push(tracks[i].name)
+          vm.songs.push(tracks[i].name);
+          vm.artists.push(tracks[i].artist.name);
         }
-
-        $("h1").append()
-
-        console.log(vm.names)
+      }).then(function(){
+        for (var i=0; i<vm.songs.length; i++){
+          $("body").append("<div class='track'><h3>" + vm.songs[i] + "</h3><div class='artist'>" + vm.artists[i] + "</div></div>")
+        }
       });
     };
   };
