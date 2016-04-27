@@ -124,5 +124,7 @@
     margin: 0; }
   .playlist-show .track {
     padding: 10px; }
+  .playlist-show .song {
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

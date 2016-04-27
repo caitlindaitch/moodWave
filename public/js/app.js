@@ -95,7 +95,7 @@
         }
       }).then(function(){
         for (var i=0; i<vm.songs.length; i++){
-          $(".songs").append("<div class='track'><div class='song'>" + vm.songs[i] + "</div><div class='artist'>" + vm.artists[i] + "</div></div>")
+          $(".songs").append("<div class='track'><div class='song'>" + vm.songs[i] + "</div><div class='artist'><em>" + vm.artists[i] + "</em></div></div>")
         }
       });
     };
