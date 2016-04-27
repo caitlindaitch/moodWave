@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 
 if (process.env.NODE_ENV == "production"){
-  mongoose.connect(process.env.MONGOLAB_URI);
+  mongoose.connect(process.env.MONGOLAB_URL);
 } else {
   mongoose.connect("mongodb://localhost/moods");
 }
