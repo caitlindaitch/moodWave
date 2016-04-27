@@ -4,7 +4,9 @@ mongoose.connect("mongodb://localhost/moods");
 
 var MoodSchema = new mongoose.Schema(
   {
-    name: String
+    name: String,
+    artist: String,
+    song: String
   }
 );
 

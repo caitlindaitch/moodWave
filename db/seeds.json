@@ -1,11 +1,37 @@
 [
   {
-    "name": "excited"
+    "name": "Despair",
+    "artist": "Depeche Mode",
+    "song": "Barrel of a Gun"
   },
   {
-    "name": "tired"
+    "name": "Brooding",
+    "artist": "The Cure",
+    "song": "Disintegration"
   },
   {
-    "name": "pensive"
+    "name": "Excited",
+    "artist": "Orchestral Manoeuvres in the Dark",
+    "song": "Electricity"
+  },
+  {
+    "name": "Happy",
+    "artist": "Dexys Midnight Runner",
+    "song": "Come On Eileen"
+  },
+  {
+    "name": "Offbeat",
+    "artist": "Talking Heads",
+    "song": "Psycho Killer"
+  },
+  {
+    "name": "Relaxed",
+    "artist": "Thompson Twins",
+    "song": "If You Were Here"
+  },
+  {
+    "name": "Sensual",
+    "artist": "Spandeau Ballet",
+    "song": "True"
   }
 ]
