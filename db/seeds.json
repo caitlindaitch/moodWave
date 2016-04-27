@@ -1,8 +1,8 @@
 [
   {
     "name": "Despair",
-    "artist": "Depeche Mode",
-    "song": "Barrel of a Gun"
+    "artist": "Depeche%20Mode",
+    "song": "Barrel%20of%20a%20Gun"
   },
   {
     "name": "Brooding",
@@ -11,27 +11,27 @@
   },
   {
     "name": "Excited",
-    "artist": "Orchestral Manoeuvres in the Dark",
+    "artist": "Orchestral%20Manoeuvres%20in%20the%20Dark",
     "song": "Electricity"
   },
   {
     "name": "Happy",
-    "artist": "Dexys Midnight Runner",
-    "song": "Come On Eileen"
+    "artist": "Dexys%20Midnight%20Runner",
+    "song": "Come%20On%20Eileen"
   },
   {
     "name": "Offbeat",
-    "artist": "Talking Heads",
-    "song": "Psycho Killer"
+    "artist": "Talking%20Heads",
+    "song": "Psycho%20Killer"
   },
   {
     "name": "Relaxed",
-    "artist": "Thompson Twins",
-    "song": "If You Were Here"
+    "artist": "Thompson%20Twins",
+    "song": "If%20You%20Were%20Here"
   },
   {
     "name": "Sensual",
-    "artist": "Spandeau Ballet",
+    "artist": "Spandeau%20Ballet",
     "song": "True"
   }
 ]

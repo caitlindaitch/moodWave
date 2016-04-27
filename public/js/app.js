@@ -67,12 +67,36 @@
   function moodIndexController(mood){
     var vm = this;
     vm.moods = mood.all;
-  }
+  };
 
   function moodShowController(mood, $stateParams){
     var vm = this;
+
     mood.find("name", $stateParams.name, function(mood){
-      vm.mood = mood
-    })
-  }
+      vm.name = mood.name;
+      var artist = mood.artist;
+      var song = mood.song;
+
+      apiCall(artist, song);
+    });
+
+    function apiCall(artist, song){
+      var Music = "http://ws.audioscrobbler.com/2.0/?method=track.getsimilar&artist=" + artist + "&track=" + song + "&APIKEY"
+
+      vm.names = [];
+
+      $.getJSON( Music, function( data ) {
+        var tracks = data.similartracks.track;
+
+        for (var i=3; i<10; i++){
+          vm.names.push(tracks[i].name)
+        }
+
+        $("h1").append()
+
+        console.log(vm.names)
+      });
+    };
+  };
+
 })();
