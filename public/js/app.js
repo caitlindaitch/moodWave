@@ -81,7 +81,7 @@
     });
 
     function apiCall(artist, song){
-      var Music = "http://ws.audioscrobbler.com/2.0/?method=track.getsimilar&artist=" + artist + "&track=" + song + "&api_key=182f7264f544c752fc6f20fdd6134d54&format=json"
+      var Music = "https://ws.audioscrobbler.com/2.0/?method=track.getsimilar&artist=" + artist + "&track=" + song + "&api_key=182f7264f544c752fc6f20fdd6134d54&format=json"
 
       vm.songs = [];
       vm.artists = [];
