@@ -183,6 +183,7 @@ $dark-shadow: #3a587f;
 
   .track {
     padding: 10px;
+    color: lighten($accent-color, 25%);
   }
 
   .song {

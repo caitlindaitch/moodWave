@@ -125,7 +125,8 @@
     padding: 20px;
     margin: 0; }
   .playlist-show .track {
-    padding: 10px; }
+    padding: 10px;
+    color: #97b3d8; }
   .playlist-show .song {
     text-transform: uppercase; }
     .playlist-show .song a:link, .playlist-show .song a:active, .playlist-show .song a:visited {
