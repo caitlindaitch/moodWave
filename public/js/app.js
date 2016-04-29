@@ -85,6 +85,7 @@
 
       vm.songs = [];
       vm.artists = [];
+      vm.urls = [];
 
       $.getJSON( Music, function( data ) {
         var tracks = data.similartracks.track;
@@ -92,10 +93,11 @@
         for (var i=3; i<10; i++){
           vm.songs.push(tracks[i].name);
           vm.artists.push(tracks[i].artist.name);
+          vm.urls.push(tracks[i].url);
         }
       }).then(function(){
         for (var i=0; i<vm.songs.length; i++){
-          $(".songs").append("<div class='track'><div class='song'>" + vm.songs[i] + "</div><div class='artist'><em>" + vm.artists[i] + "</em></div></div>")
+          $(".songs").append("<div class='track'><div class='song'><a href='" + vm.urls[i] + "'>" + vm.songs[i] + "</a></div><div class='artist'><em>" + vm.artists[i] + "</em></div></div>")
         }
       });
     };
