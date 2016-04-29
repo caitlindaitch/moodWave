@@ -85,6 +85,8 @@
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 20px; }
+  .playlist-generator .moods-outer {
+    display: inline-block; }
   .playlist-generator .moods {
     display: inline-block;
     padding-top: 10px; }
@@ -131,6 +133,6 @@
       text-decoration: none; }
     .playlist-show .song a:hover {
       opacity: .8;
-      color: #84a6d1; }
+      color: #97b3d8; }
 
 /*# sourceMappingURL=style.css.map */

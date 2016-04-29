@@ -127,6 +127,10 @@ $dark-shadow: #3a587f;
     margin-bottom: 20px;
   }
 
+  .moods-outer {
+    display: inline-block;
+  }
+
   .moods {
     display: inline-block;
     padding-top: 10px;
@@ -191,7 +195,7 @@ $dark-shadow: #3a587f;
 
     a:hover {
       opacity: .8;
-      color: lighten($accent-color, 20%);
+      color: lighten($accent-color, 25%);
     }
   }
 }
