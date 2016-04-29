@@ -183,5 +183,15 @@ $dark-shadow: #3a587f;
 
   .song {
     text-transform: uppercase;
+
+    a:link, a:active, a:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      opacity: .8;
+      color: lighten($accent-color, 20%);
+    }
   }
 }

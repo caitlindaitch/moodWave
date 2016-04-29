@@ -126,5 +126,11 @@
     padding: 10px; }
   .playlist-show .song {
     text-transform: uppercase; }
+    .playlist-show .song a:link, .playlist-show .song a:active, .playlist-show .song a:visited {
+      color: white;
+      text-decoration: none; }
+    .playlist-show .song a:hover {
+      opacity: .8;
+      color: #84a6d1; }
 
 /*# sourceMappingURL=style.css.map */
