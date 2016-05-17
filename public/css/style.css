@@ -106,7 +106,6 @@ html {
 
 .playlist-show {
   text-align: center;
-  height: 100vh;
   padding: 30px; }
   .playlist-show .playlist-inner {
     background-color: rgba(65, 113, 174, 0.3);
