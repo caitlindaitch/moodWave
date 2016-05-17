@@ -161,10 +161,8 @@ $dark-shadow: #3a587f;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
+  height: 100%;
+  padding: 30px;
 
   .playlist-inner {
     background-color: transparentize($accent-color, .7);
@@ -205,6 +203,8 @@ $dark-shadow: #3a587f;
 @media only screen and (max-width: 768px) {
 
   .playlist-generator {
+    margin-top: 30px;
+    padding: 25px;
 
     .moods-outer {
       display: block;
@@ -216,6 +216,9 @@ $dark-shadow: #3a587f;
 
     .playlist-inner {
       margin-top: 60px;
+      margin-bottom: 60px;
+      padding: 10px;
+      width: 80%;
     }
 
   }
