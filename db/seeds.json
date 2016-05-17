@@ -6,7 +6,7 @@
   },
   {
     "name": "Brooding",
-    "artist": "The Cure",
+    "artist": "The%20Cure",
     "song": "Disintegration"
   },
   {
@@ -33,5 +33,30 @@
     "name": "Sensual",
     "artist": "Spandeau%20Ballet",
     "song": "True"
+  },
+  {
+    "name": "Jealous",
+    "artist": "pet%20shop%20boys",
+    "song": "it%27s%20a%20sin"
+  },
+  {
+    "name": "Optimistic",
+    "artist": "culture%20club",
+    "song": "karma%20chameleon"
+  },
+  {
+    "name": "Lonely",
+    "artist": "new%20order",
+    "song": "bizarre%20love%20triangle"
+  },
+  {
+    "name": "Silly",
+    "artist": "b52%27s",
+    "song": "love%20shack"
+  },
+  {
+    "name": "Enthralled",
+    "artist": "Erasure",
+    "song": "blue%20savannah"
   }
 ]

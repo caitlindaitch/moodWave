@@ -90,7 +90,7 @@
       $.getJSON( Music, function( data ) {
         var tracks = data.similartracks.track;
 
-        for (var i=3; i<10; i++){
+        for (var i=3; i<13; i++){
           vm.songs.push(tracks[i].name);
           vm.artists.push(tracks[i].artist.name);
           vm.urls.push(tracks[i].url);
