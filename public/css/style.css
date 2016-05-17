@@ -1,9 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-.splash-enter {
+html {
   background: url(../images/records_background.jpg);
   background-size: cover;
+  background-attachment: fixed; }
+
+.splash-enter {
   z-index: 1000;
   width: 100%;
   height: 100vh;
@@ -48,9 +51,6 @@
       box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; }
 
 .container {
-  background: url(../images/records_background.jpg);
-  background-size: cover;
-  background-position: fixed;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -105,11 +105,8 @@
       transition: 1s; }
 
 .playlist-show {
-  background: url(../images/records_background.jpg);
-  background-size: cover;
-  background-attachment: fixed;
   text-align: center;
-  height: 100%;
+  height: 100vh;
   padding: 30px; }
   .playlist-show .playlist-inner {
     background-color: rgba(65, 113, 174, 0.3);
@@ -142,10 +139,12 @@
     .playlist-generator .moods-outer {
       display: block; }
 
-  .playlist-show .playlist-inner {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 10px;
-    width: 80%; } }
+  .playlist-show {
+    height: 100%; }
+    .playlist-show .playlist-inner {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      padding: 10px;
+      width: 80%; } }
 
 /*# sourceMappingURL=style.css.map */

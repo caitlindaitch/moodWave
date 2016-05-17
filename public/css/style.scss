@@ -8,9 +8,13 @@ $body-text: 'Open Sans', sans-serif;
 $accent-color: #4171ae;
 $dark-shadow: #3a587f;
 
-.splash-enter {
+html {
   background: url(../images/records_background.jpg);
   background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash-enter {
   z-index: 1000;
   width: 100%;
   height: 100vh;
@@ -79,9 +83,6 @@ $dark-shadow: #3a587f;
 }
 
 .container {
-  background: url(../images/records_background.jpg);
-  background-size: cover;
-  background-position: fixed;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -157,11 +158,8 @@ $dark-shadow: #3a587f;
 }
 
 .playlist-show {
-  background: url(../images/records_background.jpg);
-  background-size: cover;
-  background-attachment: fixed;
   text-align: center;
-  height: 100%;
+  height: 100vh;
   padding: 30px;
 
   .playlist-inner {
@@ -213,6 +211,7 @@ $dark-shadow: #3a587f;
   }
 
   .playlist-show {
+    height: 100%;
 
     .playlist-inner {
       margin-top: 60px;
