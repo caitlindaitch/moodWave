@@ -48,6 +48,7 @@ $dark-shadow: #3a587f;
 
     a {
       text-decoration: none;
+      color: white;
       padding: 10px;
       display: inline-block;
       position: relative;
@@ -121,10 +122,9 @@ $dark-shadow: #3a587f;
   .divider {
     height: 1px;
     background-color: white;
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 20px;
   }
 
   .moods-outer {
@@ -134,6 +134,7 @@ $dark-shadow: #3a587f;
   .moods {
     display: inline-block;
     padding-top: 10px;
+    margin-top: 25px;
 
     a {
       font-family: $body-text;
@@ -198,5 +199,24 @@ $dark-shadow: #3a587f;
       opacity: .8;
       color: lighten($accent-color, 25%);
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .playlist-generator {
+
+    .moods-outer {
+      display: block;
+    }
+
+  }
+
+  .playlist-show {
+
+    .playlist-inner {
+      margin-top: 60px;
+    }
+
   }
 }

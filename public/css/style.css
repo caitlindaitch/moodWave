@@ -33,6 +33,7 @@
     padding: 30px; }
     .splash-enter .enter-site a {
       text-decoration: none;
+      color: white;
       padding: 10px;
       display: inline-block;
       position: relative;
@@ -81,15 +82,15 @@
   .playlist-generator .divider {
     height: 1px;
     background-color: white;
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 20px; }
+    margin-top: 10px; }
   .playlist-generator .moods-outer {
     display: inline-block; }
   .playlist-generator .moods {
     display: inline-block;
-    padding-top: 10px; }
+    padding-top: 10px;
+    margin-top: 25px; }
     .playlist-generator .moods a {
       font-family: "Open Sans", sans-serif;
       text-transform: uppercase; }
@@ -135,5 +136,12 @@
     .playlist-show .song a:hover {
       opacity: .8;
       color: #97b3d8; }
+
+@media only screen and (max-width: 768px) {
+  .playlist-generator .moods-outer {
+    display: block; }
+
+  .playlist-show .playlist-inner {
+    margin-top: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
