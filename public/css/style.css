@@ -134,11 +134,13 @@ html {
 @media only screen and (max-width: 768px) {
   .container {
     display: block;
-    padding-top: 60px; }
+    padding-top: 60px;
+    padding-bottom: 60px; }
 
   .playlist-generator {
     margin-top: 30px;
-    padding: 25px; }
+    padding: 25px;
+    margin-bottom: 30px; }
     .playlist-generator .moods-outer {
       display: block; }
 
