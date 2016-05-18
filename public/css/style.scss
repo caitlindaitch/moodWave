@@ -199,6 +199,11 @@ html {
 
 @media only screen and (max-width: 768px) {
 
+  .container {
+    display: block;
+    padding-top: 60px;
+  }
+
   .playlist-generator {
     margin-top: 30px;
     padding: 25px;
